@@ -1,0 +1,137 @@
+/*  CSS  */
+
+@import url(https://fonts.googleapis.com/css?family=Lora:400,400italic,700);
+
+* {
+	margin: 0;
+	font-family: 'Lora', serif;
+}
+
+html, body {
+	height: 100%; padding: 0; margin: 0;
+}
+
+header {
+	width: 100%;
+	height: 5vh;
+	min-height: 40px;
+	background-color: white;
+	border-bottom: solid whitesmoke;
+	/*border-bottom: 1px solid #d0451b;*/
+	padding-top:10px;
+	position: fixed;
+}
+
+.appName {
+	float: left;
+	margin-left: 15px;
+	color: #d0451b;
+}
+
+.addForm {
+	float: right;
+	margin-right: 15px;
+}
+
+.addButton {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #d0451b), color-stop(1, #bc3315));
+	background:-moz-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+	background:-webkit-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+	background:-o-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+	background:-ms-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+	background:linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+	background-color:#d0451b;
+	border:1px solid #942911;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	padding:6px 17px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #854629;
+}
+.addButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bc3315), color-stop(1, #d0451b));
+	background:-moz-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+	background:-webkit-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+	background:-o-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+	background:-ms-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+	background:linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+	background-color:#bc3315;
+}
+.addButton:active {
+	position:relative;
+	top:1px;
+}
+
+.msgText {
+	height: 29px;
+	width: 30vw;
+	min-width: 200px;
+	outline: none;
+	border: 1px solid whitesmoke;
+}
+
+select {
+   width: 140px;
+   height: 29px;
+   border: 1px solid whitesmoke/*#d0451b*/;
+   padding: 5px;
+   padding-left: 10px;
+   border-radius: 0;
+   -webkit-appearance: none;
+   outline: none;
+}
+
+.board {
+	height: 50vh;
+}
+
+.quarter {
+	position: fixed;
+	height:46vh;
+	width: 49.58vw;
+	border-style: dotted;
+	border-width: .5%;
+	border-color: whitesmoke;/*#d0451b;*/
+	overflow: scroll;
+}
+
+.quarter h3 {
+	margin-top: 5px;
+	text-align: center;
+	color: gray;
+	opacity: .7;
+	position: fixed;
+	/*margin-left:20%;*/
+	width: 49.58vw;
+	background-color: white;
+}
+
+.quarter ul {
+	margin-top: 40px;
+}
+
+.quarter.s {
+	top: 6.5vh;
+	left: 0;
+}
+
+.quarter.w {
+	top: 6.5vh;
+	left: 50%;
+}
+
+.quarter.o {
+	bottom: 0;
+	left: 0;
+}
+
+.quarter.t {
+	bottom: 0;
+	left: 50%;
+}
+
+
+				

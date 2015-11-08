@@ -1,0 +1,48 @@
+<!-- SWOT BOARD APP -->
+
+<html>
+	<head>
+		<title>swot board</title>
+
+		<script src='main.js'></script>
+		<link rel="stylesheet" href="style.css"> 
+	</head> 
+	
+	<body>
+		<header>
+			<h2 class='appName'>sv swot board</h2>
+			<div class="addForm">
+
+				<select id='swotType'>
+  					<option value="s">strength</option>
+  					<option value="w">weakness</option>
+  					<option value="o">opportunity</option>
+  					<option value="t">threat</option>
+				</select>
+
+				<input id="msg" type="text" value="" onkeypress="checkEnter()" class="msgText">
+				<button onclick="_submitCard()" class="addButton">Add Card</button>
+			</div>
+		</header>
+		
+		<div id="board">
+			<div class="quarter s">
+				<h3>strengths</h3>
+				<ul class='s_list'></ul>
+			</div>
+			<div class="quarter w">
+				<h3>weaknesses</h3>
+				<ul class='w_list'></ul>
+			</div>
+			<div class="quarter o">
+				<h3>opportunities</h3>
+				<ul class='o_list'></ul>
+			</div>
+			<div class="quarter t">
+				<h3>threats</h3>
+				<ul class='t_list'></ul>
+			</div>
+		</div>
+	</body>
+
+</html>
